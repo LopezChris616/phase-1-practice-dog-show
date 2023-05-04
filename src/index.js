@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tableBody = document.getElementById("table-body");
     getDogs(tableBody);
-    editFormSubmit();
+    editFormSubmit(tableBody);
 });
 
 function getDogs(tableBody) {
@@ -44,7 +44,7 @@ function editDogHandler(dog, editBtn) {
 
 }
 
-function editFormSubmit() {
+function editFormSubmit(tableBody) {
     const dogForm = document.getElementById("dog-form");
 
     dogForm.addEventListener("submit", event => {
@@ -65,9 +65,19 @@ function editFormSubmit() {
             body: JSON.stringify(updatedDog)
         })
         .then(res => res.json())
-        .then(dog => console.log(dog))
-        .catch(err => console.log(err))
-        
-        console.log(`${event.target[0].value} | ${event.target[1].value} | ${event.target[2].value} | ${event.target[3].value}`);
-    })
+        .then(dog => {
+            const tableChildren = Array.from(tableBody.children);
+
+            tableChildren.forEach((child, i) => {
+                if(dog.id - 1 === i) {
+                    [...child.children].forEach((innerChild, i) => {
+                        if(innerChild.localName !== "button") {
+                            innerChild.textContent = event.target[i].value;
+                        }
+                    });
+                }
+            });
+        })
+        .catch(err => console.log(err));
+    });
 }

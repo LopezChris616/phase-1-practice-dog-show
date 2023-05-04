@@ -2,15 +2,15 @@
   "dogs": [
     {
       "id": 1,
-      "name": "Baby",
+      "name": "Babe",
       "breed": "Scottish Deerhound",
-      "sex": "male"
+      "sex": "female"
     },
     {
       "id": 2,
       "name": "Teddy",
-      "breed": "Rhodesian Ridgeback",
-      "sex": "female"
+      "breed": "Siberian Husky",
+      "sex": "male"
     },
     {
       "id": 3,
@@ -34,19 +34,19 @@
       "id": 6,
       "name": "Oreo",
       "breed": "English Springer",
-      "sex": "male"
+      "sex": "female"
     },
     {
       "id": 7,
       "name": "Diamond",
       "breed": "Labrador",
-      "sex": "female"
+      "sex": "male"
     },
     {
       "id": 8,
-      "name": "Chloe",
+      "name": "Cattie",
       "breed": "Dandie Terrier",
-      "sex": "male"
+      "sex": "female"
     },
     {
       "id": 9,
@@ -62,7 +62,7 @@
     },
     {
       "id": 11,
-      "name": "Jasper",
+      "name": "Jazz",
       "breed": "Redbone",
       "sex": "female"
     },
@@ -98,7 +98,7 @@
     },
     {
       "id": 17,
-      "name": "Chance",
+      "name": "Cherry",
       "breed": "Flatcoated Retriever",
       "sex": "female"
     },
@@ -110,9 +110,9 @@
     },
     {
       "id": 19,
-      "name": "Penny",
-      "breed": "Wheaten Terrier",
-      "sex": "male"
+      "name": "Penelope",
+      "breed": "Terrier",
+      "sex": "female"
     },
     {
       "id": 20,
